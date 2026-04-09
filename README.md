@@ -1,6 +1,6 @@
 # GitHub Copilot
 > [!NOTE]
-> Last updated 14-JUL-2025
+> Last updated 08-APR-2026
 
 This is a repo containing materials that can be used for future Copilot demos.
 
@@ -110,6 +110,33 @@ Examples:
    - "Whenever possible, use recursion."
 
 ### Prompt Files
+Prompt files are great for repeatable demo flows and can live under `.github/prompts`.
+
+Examples in this repo:
+1. `create-readme.prompt.md`
+1. `review.prompt.md`
+1. `plan-testCaseCoverage.prompt.md`
+
+Suggested demo prompt:
+1. "Run the review prompt against `#file:sql.py` and summarize top risks."
+
+### Skills
+Skills are task-focused playbooks that show up as slash commands in chat.
+
+Skills added for this repo:
+1. `/demo-runbook` - Build a time-boxed Copilot demo plan with Ask/Edit/Agent/Prompts/Skills.
+1. `/dotnet-readiness` - Review `DotnetApp` for reliability, maintainability, and test gaps.
+1. `/test-data-fixtures` - Generate deterministic fixture data for `test-data-demo`.
+
+Skill files:
+1. `.github/skills/demo-runbook/SKILL.md`
+1. `.github/skills/dotnet-readiness/SKILL.md`
+1. `.github/skills/test-data-fixtures/SKILL.md`
+
+Suggested skill demo script:
+1. Run `/demo-runbook` with: "Create a 20-minute demo plan for this repository."
+1. Run `/dotnet-readiness` with: "Review DotnetApp and list the top 5 production-readiness risks."
+1. Run `/test-data-fixtures` with: "Generate sample customers, products, and orders including edge cases."
 
 ### Public Code Block
 If Public Code Block is enabled, if Copilot generates code that closely matches licensed code in the public domain, the response will be blocked. However, there are ways of helping Copilot avoid suggesting public code.
