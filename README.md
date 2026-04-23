@@ -71,6 +71,13 @@ Best Practice: Only add the minimum context necessary to answer the question you
 - Documentation
 - ...
 #### Modernize
+1. COBOL → Python translation walkthrough: see [cobol/README.md](cobol/README.md).
+
+### Domain Demos
+Short, focused demo flows for common enterprise domains:
+1. SQL Server — see [sql-server/README.md](sql-server/README.md).
+1. Mainframe (COBOL / JCL) — see [cobol/README.md](cobol/README.md).
+
 ### Modes
 When to use each mode. https://code.visualstudio.com/docs/copilot/chat/chat-modes
 
